@@ -1,0 +1,20 @@
+.event-details-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.event-details-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.event-details-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}

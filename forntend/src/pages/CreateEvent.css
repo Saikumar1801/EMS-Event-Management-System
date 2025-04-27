@@ -1,0 +1,169 @@
+/* CreateEvent.css */
+
+.create-event-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.create-event-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.create-event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #34495e;
+  font-size: 0.95rem;
+}
+
+.create-event-form input,
+.create-event-form textarea,
+.react-datepicker-wrapper {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.create-event-form input:focus,
+.create-event-form textarea:focus,
+.react-datepicker__input-container input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.create-event-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.react-datepicker__input-container {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.submit-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+.submit-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #e74c3c;
+  background-color: #fadbd8;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.error {
+  border-color: #e74c3c !important;
+}
+
+.error-message span {
+  font-size: 0.85rem;
+}
+
+/* Date picker custom styles */
+.react-datepicker {
+  font-family: inherit;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.react-datepicker__header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #3498db;
+}
+
+.react-datepicker__day--selected:hover {
+  background-color: #2980b9;
+}
+
+.react-datepicker__time-container 
+.react-datepicker__time 
+.react-datepicker__time-box 
+ul.react-datepicker__time-list 
+li.react-datepicker__time-list-item--selected {
+  background-color: #3498db;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .create-event-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .create-event-container h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-event-form input,
+  .create-event-form textarea,
+  .react-datepicker__input-container input {
+    padding: 0.7rem;
+  }
+  
+  .submit-button {
+    padding: 0.8rem;
+  }
+}
